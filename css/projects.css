@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+.logo img {
+    width: 150px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 10px;
+
+}
+a:hover {
+    text-decoration: underline;
+    color: #c9e6dd;
+}
+.header {
+    text-align: center;
+    line-height: 10vh;
+}
+.grid {
+    height: 100vh;
+    display: grid;
+    
+}
+
+.basic-grid {
+
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr, 1fr));
+  
+  
+}
+.card-tall {
+  
+}
+.card-wide{
+   
+}
+.card {
+    background-color: #e4d4f5;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    justify-content: center;
+   
+    transition: 1s;
+   
+    border: 1px solid black;
+    box-shadow: 0 0 20px 0 ;
+    
+}
+.card:hover, .card:focus{
+    transform: rotateX(45deg);
+    animation: backwards;
+}
+
+.card-wide:hover {
+    transform: rotateY(45deg);
+    animation: forwards;
+}
+.card a {
+    font-size: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    font-weight: bolder;
+}
+.card a:hover{
+    color: #e4add4;
+}
+
+
+ 
+@keyframes cardEntrance {
+    from{
+        transform: scale(0.8);
+        filter: rotate(180deg);
+    
+    }
+    to{
+       
+        transform: scale(1);
+        filter: rotate(0deg);
+    }
+}  
+ 
+
+/* 
+@media screen and (min-width: 600px) {
+    .card-tall {
+        grid-row: span 2 / auto;
+      }
+    
+    .card-width {
+        grid-column: span 2/ auto;
+    } 
+
+}*/
+
+.footer {
+    line-height: 10vh;
+    background: #dada;
+    
+    align-items: center;
+    
+}
+.social{
+    line-height: 20vh;
+    place-items:unset;
+}
+.copyright {
+    text-align: center;
+    font-size: 1.5rem;
+    background: #2a025f86;
+    color: #fff;
+    
+}

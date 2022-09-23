@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Tillana&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+}
+header {
+    font-size: 30px;
+    padding: 5px;
+    margin: 10px;
+}
+a {
+    text-decoration: none;
+
+}
+a:hover {
+    color: #fff;
+}
+.navbar{
+    background-color: red;
+    min-height: 80px;
+
+}
+.card-holder {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.card {
+    background-color: #fff;
+    width: 70%;
+    border: 5px solid #483D8B;
+    padding: 20px;
+    margin: 20px;
+    display: block;
+    justify-content: center;
+    box-shadow: 18px 18px #483D8B;
+    border-radius: 2rem ;
+    cursor: pointer;
+    
+}
+.about:hover {
+    background-color: #483D8B;
+    color: #Fff;
+    font-size: 230%;
+    border-radius: 38px;
+    transition: 1.2s;
+}
+h1{
+    padding: 10px;
+    margin: 0px;
+    font-size: 40px;
+    
+}
+
+.about {
+    
+    padding: 3rem;
+    margin: 3rem;
+    word-spacing: 1rem;
+    font-size: 2.2rem;
+    background: #fff;
+    font-family: 'Tillana', cursive;
+
+}
+
+.navbar {
+    background: #483D8B;
+    height: 30vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+.nav-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    
+}
+.logo {
+    color: #fff;
+    font-size: 2.2rem;
+    font-family: 'Tillana', cursive;
+    padding-bottom: 200px;
+
+}
+.nav-link, li {
+    list-style: none;
+    font-size: 2.5rem;
+    color: #fff;
+}
+.nav-link:hover {
+    color: #00BFFF;
+    text-decoration: underline;
+}
+.social {
+    font-size: 2rem;
+    letter-spacing: 25px;
+    margin-right: auto;
+    color: #fff;
+}
+.social:hover{
+    color: #00BFFF;
+}
+.tm {
+    text-align: center;
+    background-color: #483D8B;
+    color: #fff;
+    padding: 20px 0 10px;
+    font-size: 2rem;
+}
